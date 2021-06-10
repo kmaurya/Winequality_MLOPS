@@ -33,6 +33,21 @@
 
 13. Do git commit -m "First commit"
 
+14. Create a git hub repository
+
+15. Do git remote add origin your repo link
+    for eg.: git remote add origin https://github.com/kmaurya/Winequality_MLOPS.git
+    
+16. Do git branch -M main
+
+17. Do git push -u origin main
+
+18. Lets beign for actual code
+
+19. 
+    
+
+
 
 
 
