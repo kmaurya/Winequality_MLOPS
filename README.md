@@ -59,9 +59,19 @@
 23. Create load_data.py file in src where we will be adding data in raw folder
     fsutil file createnew src\load_data.py 0
 
+24, Run the file and check that raw folder should be updated with winequality.csv file
 
-
+25. Now add stages in the dvc.yaml file. Stages are nothing but it is a pipeline 
+    We have given the first stage name as load_data
     
+26. After adding the cmd, deps and outs we will run the pipeline using command
+    dvc repro
+    
+27. After running this command dvc.lock file is created, and it tracks the record if there is some change in the file 
+    then it reruns again and create new hash value else the hash value remains the same.
+
+
+
 
 
 

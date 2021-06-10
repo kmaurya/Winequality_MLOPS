@@ -19,7 +19,12 @@ def get_data(config_path):
     config = read_params(config_path)
     print(config)
     data_path = config["data_source"]["s3_resource"]
-    df = pd.read_csv(os.path.join(os.path.split(os.getcwd())[0],data_path))
+
+    # While running using main function  use this line
+    # df = pd.read_csv(os.path.join(os.path.split(os.getcwd())[0],data_path))
+
+    # While running through dvc repo command use this line
+    df = pd.read_csv(data_path)
     print(df.head())
     return df
 
