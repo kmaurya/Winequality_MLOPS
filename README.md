@@ -56,6 +56,10 @@
 
 22. Write the code to get data 
 
+23. Create load_data.py file in src where we will be adding data in raw folder
+    fsutil file createnew src\load_data.py 0
+
+
 
     
 
