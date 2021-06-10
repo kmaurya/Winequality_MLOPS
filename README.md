@@ -29,7 +29,9 @@
 
 11. Do dvc add data_given/winequality.csv
 
-12. 
+12. Do git add . to move files to staging area
+
+13. Do git commit -m "First commit"
 
 
 
