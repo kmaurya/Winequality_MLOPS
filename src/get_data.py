@@ -18,6 +18,10 @@ def read_params(config_path):
 def get_data(config_path):
     config = read_params(config_path)
     print(config)
+    data_path = config["data_source"]["s3_resource"]
+    df = pd.read_csv(os.path.join(os.path.split(os.getcwd())[0],data_path))
+    print(df.head())
+    return df
 
 
 if __name__ == "__main__":
@@ -25,3 +29,4 @@ if __name__ == "__main__":
     args.add_argument("--config", default=os.path.join(os.path.split(os.getcwd())[0], "params.yaml"))
     parsed_args = args.parse_args()
     get_data(config_path=parsed_args.config)
+

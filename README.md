@@ -54,6 +54,8 @@
 21. Create a new file under src folder get_data.py which will contain code to get the data
     fsutil file createnew src\get_data.py 0
 
+22. Write the code to get data 
+
 
     
 
