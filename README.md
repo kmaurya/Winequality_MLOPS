@@ -44,7 +44,17 @@
 
 18. Lets beign for actual code
 
-19. 
+19. Update the params.yaml file with the configuration paths and values
+
+20. Commit your changes using 
+    git add .
+    git commit -m "Updated params.yaml"
+    git push -u origin main
+    
+21. Create a new file under src folder get_data.py which will contain code to get the data
+    fsutil file createnew src\get_data.py 0
+
+
     
 
 
