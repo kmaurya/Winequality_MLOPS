@@ -109,6 +109,16 @@ Successfully we have implemented two stages i.e. two pipelines created
     
 42. Push the code to github now
 
+43. Let's do some experiement with the params to check the tracking of model.
+    Let's change the params value passed to model in params.yaml file
+    
+44. Do dvc repro
+
+45. Let's compare the previously generated and newly generated metrics using 
+    dvc metrics diff
+    
+
+
     
 
 
