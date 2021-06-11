@@ -69,6 +69,50 @@
     
 27. After running this command dvc.lock file is created, and it tracks the record if there is some change in the file 
     then it reruns again and create new hash value else the hash value remains the same.
+    
+28. Create a new file split_data.py to split data set into training and testing instances
+    fsutil file createnew src\split_data.py 0
+    
+29. Add the code to the split_data.py
+
+30. Create stage 2 in dvc.yaml
+
+31. Run dvc repro
+
+Successfully we have implemented two stages i.e. two pipelines created
+
+32. Push your code 
+
+33. Create a new file for training now 
+    fsutil file createnew src\train_and_evaluate.py 0
+    
+34. Write the code for training and add as pipeline for stage in dvc.yaml
+
+35. Create a folder reports 
+    mkdir report
+    
+36. Create a file params.json file and scores.json
+        fsutil file createnew report/params.json 0
+        fsutil file createnew report/scores.json 0
+    
+37. We need not worry about what is to be added it will automatically be updated by the dvc pipelines.
+
+38 Do dvc repo 
+
+39. All the metrics related scores and params are updated after running above command.
+
+40. Now let's check whether dvc is tracking the metrics or not. Run below command:
+    dvc metrics show
+    
+41. We can also track the differences from past 
+    dvc metrics diff
+    
+42. Push the code to github now
+
+    
+
+
+
 
 
 

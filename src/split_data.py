@@ -27,10 +27,11 @@ def split_and_save_data(config_path):
     random_state = config["base"]["random_state"]
 
     df = pd.read_csv(raw_data_path)
-    train,test = train_test_split(df,random_state=random_state,test_size=test_ratio)
+    train, test = train_test_split(df, random_state=random_state, test_size=test_ratio)
 
     train.to_csv(train_data_path, sep=',', index=False)
     test.to_csv(test_data_path, sep=',', index=False)
+
 
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
