@@ -160,6 +160,9 @@ tox can be used for ...
     
 56. Use of doing this is src will be treated as package here and you will be able to import it
 
+57. You can use pytest to run the testcases and tox to run complete environment related task including testcases.
+
+58. We will not just check basic validations and put the validation check in test_config.py file
 
     
     
