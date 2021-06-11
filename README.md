@@ -164,6 +164,10 @@ tox can be used for ...
 
 58. We will not just check basic validations and put the validation check in test_config.py file
 
+59. Update your tox file to include PEP8 standard.
+
+60. Psh your changes.
+
     
     
 
