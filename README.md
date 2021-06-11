@@ -117,6 +117,52 @@ Successfully we have implemented two stages i.e. two pipelines created
 45. Let's compare the previously generated and newly generated metrics using 
     dvc metrics diff
     
+46. You can rollback to any previous stage using git checkout and the commit id.
+
+Now that we have basic code implementation done. Lets look into over the testing part.
+
+47. Install tox and pytest library
+
+What is tox
+tox is mainly used as a command line tool and needs a tox.ini or a tool.tox section in pyproject.toml containing the 
+configuration.
+tox can be used for ...
+        creating development environments
+        running static code analysis and test tools
+        automating package builds
+        running tests against the package built by tox
+        checking that packages install correctly with different Python versions/interpreters
+        unifying Continuous Integration and command line based testing
+        building and deploying project documentation
+        releasing a package to PyPI or any other platform
+
+48. Let's create tox.ini file now in the root directory
+
+49. Add environment list and command to the tox file
+
+50. Create a directory tests which will contain testcases
+    mkdir tests
+    
+51. Add a file conftest.py, __init__.py and test_config.py to tests folder
+    fsutil file createnew tests/conftest.py 0
+    fsutil file createnew tests/test_config.py 0
+    fsutil file createnew tests/__init__.py 0
+
+52. You can write the test cases in test_config.py file. Note that the testcases must start with test
+
+53. Now create setup.py file which will help virtual env created by tox to identify the code package.
+     fsutil file createnew setup.py 0
+    
+54. Add code in setup file.
+
+55. Let's install the package created in setup.py
+    pip install -e .
+    
+56. Use of doing this is src will be treated as package here and you will be able to import it
+
+
+    
+    
 
 
     
